@@ -1,0 +1,43 @@
+# =============================================================================
+# DMV Web App — Backend Python Dependencies
+# =============================================================================
+
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy==2.1.4
+alembic==1.14.0
+psycopg2-binary==2.9.13
+
+# Validation / settings
+# pydantic 2.14.x + pydantic-core 2.50.x have pre-built wheels for Python 3.14
+pydantic==2.14.1
+pydantic-settings==2.15.0
+pydantic[email]==2.14.1
+python-jose[cryptography]==3.3.0
+# passlib 1.7.4 is incompatible with bcrypt 5.x; use bcrypt directly
+bcrypt==4.3.0
+
+# HTTP
+python-multipart==0.0.19
+httpx==0.28.1
+
+# PDF generation
+reportlab==4.2.5
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.2
+# pillow 12.x ships pre-built wheels for Python 3.14
+pillow==12.3.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1
+factory-boy==3.3.1
+
+# Linting / formatting (dev)
+ruff==0.8.4
